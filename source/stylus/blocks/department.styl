@@ -1,0 +1,95 @@
+.department
+  padding-top 235px
+  padding-bottom 165px
+  margin-bottom -150px
+  background-image url("../img/bg/bg-department.png")
+  background-repeat no-repeat
+  background-size 100% 100%
+  z-index 2
+  position relative
+
+.department__wrapper
+  width 100%
+  max-width 1200px
+  padding-left 75px
+  padding-right 75px
+  margin 0 auto
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  box-sizing border-box
+
+  & h2
+    width 100%
+    padding 0
+    margin 0
+    margin-bottom 12px
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 28px
+    font-weight 400
+    text-transform uppercase
+    color #393939
+
+  & h3
+    width 100%
+    padding 0
+    padding-bottom 30px
+    margin 0
+    margin-bottom 20px
+    font-family "IBMPlexSans Medium", Arial, sans-serif
+    font-size 48px
+    font-weight 400
+    text-transform uppercase
+    color #b9a779
+    position relative
+
+    &::before
+      content ""
+      width 100px
+      height 2px
+      background-color #393939
+      position absolute
+      bottom 0
+      left 0
+
+  & p
+    width 48%
+    padding 0
+    margin 0
+    margin-bottom 25px
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 15px
+    line-height 24.5px
+    color #5e5e5e
+
+@media (max-width: $tablet)
+  .department
+    background-size cover
+    background-position 50%
+
+  .department__wrapper
+    & p
+      width 100%
+
+@media(max-width: $mobile)
+  .department
+    padding-top 150px
+
+  .department__wrapper
+    padding-left 10px
+    padding-right 10px
+
+    & h2
+      text-align center
+
+    & h3
+      font-size 30px
+      text-align center
+
+      &::before
+        left 50%
+        transform translateX(-50px)
+
+    & p
+      font-size 13px
+      text-align center

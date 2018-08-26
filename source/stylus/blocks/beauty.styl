@@ -1,0 +1,117 @@
+.beauty
+  width 100%
+  max-width 1200px
+  padding-left 75px
+  padding-bottom 48px
+  margin 0 auto
+  box-sizing border-box
+
+
+.beauty__wrapper
+  width 90%
+  padding-bottom 44px
+
+  & h2
+    padding 0
+    margin 0
+    margin-bottom 13px
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 28px
+    font-weight 400
+    text-transform uppercase
+    color #393939
+
+  & h3
+    padding 0
+    padding-bottom: 28px;
+    margin: 0;
+    margin-bottom: 31px;
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 48px
+    font-weight 600
+    text-transform uppercase
+    color #b9a779
+    position relative
+
+    &::before
+      content ""
+      width 100px
+      height 2px
+      background-color #393939
+      position absolute
+      bottom 0
+      left 0
+
+  & p
+    padding 0
+    margin 0
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 15px
+    line-height 24.5px
+    color #5e5e5e
+
+.beauty__logo
+  margin-left auto
+  margin-bottom: 52px;
+  display block
+
+.beauty__list
+  display flex
+
+.beauty__item
+  width: 27.6%;
+  margin-right 40px
+  display flex
+  flex-direction column
+
+  .beauty__image-wrapper
+    min-height 81px
+
+  & p
+    padding 0
+    padding-top 27px
+    margin 0
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 15px
+    line-height 24.5px
+    color #5e5e5e
+    display block
+
+@media (max-width: $tablet)
+  .beauty__list
+    flex-direction column
+
+  .beauty__item
+    width 100%
+    margin-bottom 20px
+    text-align center
+
+@media(max-width: $mobile)
+  .beauty
+    padding-top 20px
+    padding-left 10px
+    padding-right 10px
+    padding-bottom 0
+
+    & h2
+      font-size 19px
+      text-align center
+
+    & h3
+      font-size 30px
+      text-align center
+
+      &::before
+        left 50%
+        transform translateX(-50px)
+
+    & p
+      font-size 13px
+      text-align center
+
+  .beauty__logo
+    margin-right auto
+    margin-bottom 25px
+
+  .beauty__wrapper
+    width 100%

@@ -1,0 +1,54 @@
+.main-header
+  padding-bottom 119px
+  margin-bottom: -10px;
+  background-image url("../img/bg/bg-header.png")
+  background-repeat no-repeat
+  background-size 100% 100%
+  position relative
+
+.main-header__wrapper
+  max-width 1200px
+  padding-left 25px
+  padding-right 25px
+  margin 0 auto
+  box-sizing border-box
+
+  & h1
+    padding 0
+    margin 0
+    margin-bottom 10px
+    font-family "IBMPlexSans Regular", Arial, sans-serif
+    font-size 28px
+    font-weight 200
+    color #ffffff
+
+  & h2
+    padding 0
+    margin 0
+    font-family "IBMPlexSans Medium", Arial, sans-serif
+    font-size 54px
+    font-weight 200
+    text-transform uppercase
+    color #ffffff
+
+.main-header__links
+  position absolute
+  right 0
+  top 150px
+
+  & li
+    width 150px
+    height 60px
+    margin-bottom 5px
+    display flex
+    align-items center
+    justify-content center
+    background-color #fafbfc
+
+  & li:last-child
+    margin-bottom 0
+
+@media (max-width: $tablet)
+  .main-header
+    background-size 1366px auto
+    background-position 25%
