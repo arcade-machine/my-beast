@@ -133,7 +133,15 @@ a {
   line-height: 19.5px;
   color: #fefefe;
 }
-.navigation__item--current a {
+.navigation__item p {
+  padding: 0;
+  margin: 0;
+  font-family: "IBMPlexSans Medium", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 19.5px;
+  color: #fefefe;
+}
+.navigation__item--current p {
   color: #b9a779;
 }
 .navigation__burger {

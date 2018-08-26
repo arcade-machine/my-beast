@@ -10,51 +10,51 @@ html(lang = "ru")
 
         title My beast, красота в исполнении
 
-        link(type = "text/css", rel = "stylesheet", href = "/css/styles.css")
+        link(type = "text/css", rel = "stylesheet", href = "css/styles.css")
 
 
     body
         header(class = "main-header")
             nav(class = "main-header__navigation navigation")
                 div(class = "navigation__wrapper")
-                    a(class = "navigation__link", href = "#")
-                        img(class = "navigation__logo", src = "img/logo-header.png", width = "120", height = "33")
-                    button(class = "navigation__burger")
+                    a(class = "navigation__link", href = "#", aria-label = "Начальная страница")
+                        img(class = "navigation__logo", src = "img/logo-header.png", width = "120", height = "33", alt = "Логотип")
+                    button(class = "navigation__burger", aria-label = "Навигация")
                     ul(class = "navigation__list")
                         li(class = "navigation__item")
-                            a(href = "#") О нас
+                            a(href = "#", aria-label = "О нас") О нас
                         li(class = "navigation__item")
-                            a(href = "#") Философия
+                            a(href = "#", aria-label = "Переход на страницу: Философия") Философия
                         li(class = "navigation__item navigation__item--current")
-                            a(href = "#") Дизайн
+                            p Дизайн
                         li(class = "navigation__item")
-                            a(href = "#") Обучение
+                            a(href = "#", aria-label = "Переход на страницу: Обучение") Обучение
                         li(class = "navigation__item")
-                            a(href = "#") Монтаж
+                            a(href = "#", aria-label = "Переход на страницу: Монтаж") Монтаж
                         li(class = "navigation__item")
-                            a(href = "#") Технология
+                            a(href = "#", aria-label = "Переход на страницу: Технология") Технология
                         li(class = "navigation__item")
-                            a(href = "#") Аксессуары
+                            a(href = "#", aria-label = "Переход на страницу: Аксессуары") Аксессуары
                         li(class = "navigation__item")
-                            a(href = "#") Каталог
+                            a(href = "#", aria-label = "Переход на страницу: Каталог") Каталог
                         li(class = "navigation__item")
-                            a(href = "#") Для кого
+                            a(href = "#", aria-label = "Переход на страницу: Для кого") Для кого
                         li(class = "navigation__item")
-                            a(href = "#") Контакты
+                            a(href = "#", aria-label = "Переход на страницу: Контакты") Контакты
             div(class = "main-header__wrapper")
                 h1 MyBEAST
                 h2 Дизайн
             ul(class = "main-header__links")
                 li
                     a(href = "#")
-                        img(src = "img/logo-MyEQUILIBRIA.png", width = "118", height = "17")
+                        img(src = "img/logo-MyEQUILIBRIA.png", width = "107", height = "18", alt = "Логотип MyEQUILIBRIA")
                 li
                     a(href = "#")
-                        img(src = "img/logo-MyISLE.png", width = "95", height = "34")
+                        img(src = "img/logo-MyISLE.png", width = "95", height = "34", alt = "Логотип MyISLE")
 
         main(class = "main-content")
             section(class = "main-content__beauty beauty")
-                img(class = "beauty__logo", src = "img/logo.png", width = "240", height = "66")
+                img(class = "beauty__logo", src = "img/logo.png", width = "240", height = "66", alt = "Логотип")
                 div(class = "beauty__wrapper")
                     h2 Дизайн
                     h3 Красота в исполнении
@@ -62,15 +62,15 @@ html(lang = "ru")
                 ul(class = "beauty__list")
                     li(class = "beauty__item")
                         div(class = "beauty__image-wrapper")
-                            img(src = "img/icons/icon-arrows.png", width = "69", height = "69")
+                            img(src = "img/icons/icon-arrows.png", width = "69", height = "69", alt = "Стрелки")
                         p Запускает инстинктивное движение тела
                     li(class = "beauty__item")
                         div(class = "beauty__image-wrapper")
-                            img(src = "img/icons/icon-target.png", width = "81", height = "81")
+                            img(src = "img/icons/icon-target.png", width = "81", height = "81", alt = "Мишень")
                         p Не отвлекает от основной цели тренировки
                     li(class = "beauty__item")
                         div(class = "beauty__image-wrapper")
-                            img(src = "img/icons/icon-cup.png", width = "58", height = "73")
+                            img(src = "img/icons/icon-cup.png", width = "58", height = "73", alt = "Кубок")
                         p Показатели спортсменов и делает обучение более гладкой
             section(class = "main-content__beast beast")
                 div(class = "beast__wrapper")
@@ -102,27 +102,27 @@ html(lang = "ru")
                     li(class = "social__item")
                         a(href = "#")
                             p(class = "visually-hidden") Мы в Facebook
-                            img(src = "img/icons/icon-facebook.png", width = "32", height = "32")
+                            img(src = "img/icons/icon-facebook.png", width = "32", height = "32", alt = "Facebook")
                     li(class = "social__item")
                         a(href = "#")
                             p(class = "visually-hidden") Мы в Twitter
-                            img(src = "img/icons/icon-tvit.png", width = "32", height = "32")
+                            img(src = "img/icons/icon-tvit.png", width = "32", height = "32", alt = "Twitter")
                     li(class = "social__item")
                         a(href = "#")
                             p(class = "visually-hidden") Мы в YouTube
-                            img(src = "img/icons/icon-you.png", width = "32", height = "32")
+                            img(src = "img/icons/icon-you.png", width = "32", height = "32", alt = "Youtube")
                     li(class = "social__item")
                         a(href = "#")
                             p(class = "visually-hidden") Мы в Instagram
-                            img(src = "img/icons/icon-inst.png", width = "32", height = "32")
+                            img(src = "img/icons/icon-inst.png", width = "32", height = "32", alt = "Instagram")
                     li(class = "social__item")
                         a(href = "#")
                             p(class = "visually-hidden") Напишите нам
-                            img(src = "img/icons/icon-gmail.png", width = "32", height = "32")
-                a(href = "tel:+7 495 645 45 51", class = "main-footer__phone") +7 495 645 45 51
+                            img(src = "img/icons/icon-gmail.png", width = "32", height = "32", alt = "Gmail")
+                a(href = "tel:+74956454551", class = "main-footer__phone") +7 495 645 45 51
                 a(href = "mailto:info@site.ru", class = "main-footer__mail") info@site.ru
                 section(class = "main-footer__copyright copyright")
                     p ACTIVE SPORT
                     p ©  Copyright site, 2018 Политика конфеденциальности
 
-    script(src = "js/script.js")
+        script(src = "js/script.js")
